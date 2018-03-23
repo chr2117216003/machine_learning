@@ -1,0 +1,80 @@
+package Test;
+
+
+import weka.core.Attribute;
+import weka.core.DenseInstance;
+import weka.core.Instances;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+/**
+ * Generates an weka.core.Instances object with different attribute types.
+ *
+ * @author FracPete (fracpete at waikato dot ac dot nz)
+ * @version $Revision$
+ */
+public class generatearff {
+	private static String systemPath="C:\\Users\\Administrator\\Desktop";
+	
+	  public static void main(String[] args) throws IOException {  
+		
+      	int featureNum=21;//attribute!!
+     
+		BufferedWriter bw5=new BufferedWriter(new FileWriter(systemPath+"/TT"+featureNum+".arff"),5*1024*1024);//systemPath+"/6.arff"
+		bw5.write("@relation Cpp");
+	
+		bw5.newLine();
+		for (int i = 1; i <= featureNum; i++) {
+			bw5.write("@attribute Feature" + i + " real");
+			bw5.newLine();	
+		}
+	
+		bw5.write("@attribute class ");
+		bw5.write("{" + "0"+ "," +"1" + "}");
+		bw5.newLine();
+		bw5.write("@data");
+		bw5.newLine();
+	
+		
+		
+	
+		BufferedReader br3=new BufferedReader(new FileReader(systemPath+"/pcpse.csv"),5*1024*1024);
+		String line3;
+		String line4="";
+		int i=1;
+		while((line3=br3.readLine())!=null) //&& (line4=br4.readLine())!=null)
+		{   if(i<=462) {line4=",0";}else{line4=",1";}
+		     i++;
+			String line5 = line3+line4;//+line4.substring(0,line4.length());
+			bw5.write(line5);	
+			bw5.newLine();
+			bw5.flush();
+		}
+		br3.close();
+		//br4.close();
+		bw5.close();
+		}
+}
+//}

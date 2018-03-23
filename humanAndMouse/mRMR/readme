@@ -1,0 +1,31 @@
+
+预处理，将arff转化成csv，比如：（这个代码有点傻逼，见到arff的空行不知道跳过，谁有时间给改改！）
+java -jar arff2csv.jar 4.arff 4.csv
+
+
+用法样例：
+./mrmr -i test_lung_s3.csv -n 20 >test_lung_s3.mrmrout
+
+然后运行如下，可以抽取出降维后的arff 
+java -jar mrmr_to_arff.jar test_lung_s3.mrmrout test_lung_s3.csv test_lung_s3.arff -f 20 -c 7 1 2 3 4 5 6 7
+
+注：-f 20 是选20个特征，和前面的 -n 20是对应一致的
+-c 7 1 2 3 4 5 6 7是7个类别，第一个7是有7个类别，后面的1 2 3 4 5 6 7是类别的名称
+
+
+使用说明：
+http://bbs.malab.cn/forum.php?mod=viewthread&tid=964&page=1
+
+软件网址：
+http://penglab.janelia.org/proj/mRMR/
+
+
+参考文献：
+
+CHRIS DING, HANCHUAN PENG. MINIMUM REDUNDANCY FEATURE SELECTION FROM MICROARRAY GENE EXPRESSION DATA. Journal of Bioinformatics & Computational Biology, 2005, 3(3):523.
+
+Quan Zou, Jiancang Zeng, Liujuan Cao, Rongrong Ji. A Novel Features Ranking Metric with Application to Scalable Visual and Bioinformatics Data Classification. Neurocomputing. 2016, 173:346-354.
+
+
+
+注意：磁盘空间有限，运行完请立即删除相关文件
