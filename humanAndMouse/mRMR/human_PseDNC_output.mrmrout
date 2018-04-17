@@ -1,0 +1,63 @@
+You have specified parameters: no discretization, #fea=22 selection method=MID #maxVar=10000 #maxSample=1000
+
+Target classification variable (#1 column in the input data) has name=class 	entropy score=0.000
+
+*** MaxRel features ***
+Order 	 Fea 	 Name 	 Score
+1 	 17 	 16 	 0.000
+2 	 19 	 18 	 0.000
+3 	 15 	 14 	 0.000
+4 	 16 	 15 	 0.000
+5 	 13 	 12 	 0.000
+6 	 18 	 17 	 0.000
+7 	 11 	 10 	 0.000
+8 	 20 	 19 	 0.000
+9 	 21 	 20 	 0.000
+10 	 14 	 13 	 0.000
+11 	 1 	 0 	 0.000
+12 	 12 	 11 	 0.000
+13 	 5 	 4 	 0.000
+14 	 7 	 6 	 0.000
+15 	 3 	 2 	 0.000
+16 	 4 	 3 	 0.000
+17 	 2 	 1 	 0.000
+18 	 6 	 5 	 0.000
+19 	 10 	 9 	 0.000
+20 	 8 	 7 	 0.000
+21 	 9 	 8 	 0.000
+
+*** mRMR features *** 
+Order 	 Fea 	 Name 	 Score
+1 	 17 	 16 	 0.000
+2 	 19 	 18 	 0.000
+3 	 15 	 14 	 0.000
+4 	 16 	 15 	 0.000
+5 	 13 	 12 	 0.000
+6 	 18 	 17 	 0.000
+7 	 11 	 10 	 0.000
+8 	 20 	 19 	 0.000
+9 	 21 	 20 	 0.000
+10 	 14 	 13 	 0.000
+11 	 1 	 0 	 0.000
+12 	 12 	 11 	 0.000
+13 	 5 	 4 	 0.000
+14 	 7 	 6 	 0.000
+15 	 3 	 2 	 0.000
+16 	 4 	 3 	 0.000
+17 	 2 	 1 	 0.000
+18 	 6 	 5 	 0.000
+19 	 10 	 9 	 0.000
+20 	 8 	 7 	 0.000
+21 	 9 	 8 	 0.000
+22 	 22 	 21 	 0.000
+
+
+ *** This program and the respective minimum Redundancy Maximum Relevance (mRMR) 
+     algorithm were developed by Hanchuan Peng <hanchuan.peng@gmail.com>for
+     the paper 
+     "Feature selection based on mutual information: criteria of 
+      max-dependency, max-relevance, and min-redundancy,"
+      Hanchuan Peng, Fuhui Long, and Chris Ding, 
+      IEEE Transactions on Pattern Analysis and Machine Intelligence,
+      Vol. 27, No. 8, pp.1226-1238, 2005.
+

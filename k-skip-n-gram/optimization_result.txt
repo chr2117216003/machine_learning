@@ -1,0 +1,6 @@
+Value of "n"=13;   
+Value of "k"= 1;   
+Value of "np"= 6;  
+Value of "kp"= 1;   
+Value of "y"= 5;   
+Value of "c"= 1;   
